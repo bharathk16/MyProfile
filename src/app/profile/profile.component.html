@@ -1,0 +1,18 @@
+<div class="container">
+    <h5>Bharath's Profile</h5>
+<hr>
+<br>
+<div class="container">
+    <div class="row">
+    <div class="col-md-5">
+        <app-details-list 
+        (aboutSelected)="onLoad($event)" 
+        (expSelected)="onLoad($event)"
+        (skillsSelected)="onLoad($event)"></app-details-list>
+    </div>
+    <div class="col-md-7">
+        <app-detail [display]="loadedDisplay"></app-detail>
+    </div>
+</div>
+</div>
+</div>
